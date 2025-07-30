@@ -1,0 +1,25 @@
+@import "../../display/style/variables";
+
+.card {
+  border: 2px solid $colour2;
+  height: 210px;
+  margin: 7px auto;
+  position: relative;
+  width: 280px;
+  .card-text-box {
+    position: absolute;
+    top: 42px;
+    .card-title {
+      text-align: center;
+    }
+    .card-description {
+      font-size: 12px;
+      margin: 0 12px;
+      text-align: center;
+    }
+  }
+}
+
+.route {
+  margin: 21px 2%;
+}

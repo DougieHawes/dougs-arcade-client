@@ -1,0 +1,8 @@
+@import "../../../display/style/variables";
+
+.home-container {
+  .game-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

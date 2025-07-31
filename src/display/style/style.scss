@@ -23,8 +23,12 @@ h6 {
   max-height: 100vh;
   min-height: 100vh;
   overflow: hidden;
-  .title {
-    text-align: center;
-    margin-top: 7px;
+  .header {
+    height: $header-height;
+    .title {
+      font-size: 26px;
+      margin-top: 7px;
+      text-align: center;
+    }
   }
 }

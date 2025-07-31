@@ -2,7 +2,20 @@
 
 .home-container {
   .game-grid {
-    display: flex;
-    flex-wrap: wrap;
+    align-content: start;
+    background-color: $colour2;
+    border-bottom: 2px solid $colour2;
+    border-top: 2px solid $colour2;
+    display: grid;
+    grid-auto-rows: min-content;
+    grid-template-columns: repeat(auto-fit, minmax(297px, 1fr));
+    gap: 0;
+    height: calc(99vh - $header-height);
+    margin: 0;
+    overflow: scroll;
+    padding: 0;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
   }
 }

@@ -1,13 +1,16 @@
 @import "../../display/style/variables";
 
 .card {
+  aspect-ratio: 297 / 210;
+  background-color: $colour1;
+  min-width: 100%;
+  width: 100%;
   border: 2px solid $colour2;
-  height: 210px;
-  margin: 7px auto;
   position: relative;
-  width: 280px;
   .card-text-box {
+    opacity: 0;
     position: absolute;
+    transition: opacity 0.3s ease-in-out;
     top: 42px;
     .card-title {
       text-align: center;
@@ -19,7 +22,11 @@
     }
   }
 }
+.card:hover {
+  .card-text-box {
+    opacity: 1;
+  }
+}
 
 .route {
-  margin: 21px 2%;
 }
